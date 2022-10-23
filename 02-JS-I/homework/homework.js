@@ -1,6 +1,6 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
-// Crea una variable "string", puede contener lo que quieras:
+// Crea una variable "string", puede contener l o que quieras:
 const nuevaString = 'Hola Nico';
 
 // Crea una variable numérica, puede ser cualquier número:
@@ -291,7 +291,7 @@ function esVocal(letra){
 
   if (letra.length > 1) {
       return "Dato incorrecto"
-  } else if (letra == a,e,i,o,u) {
+  } else if (letra == a || letra == e || letra == i || letra == o || letra == u) {
       return "Es vocal"
   } {
     return "Dato incorrecto"
