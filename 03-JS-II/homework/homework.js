@@ -153,14 +153,14 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
   if (num1 === 0 || num2 === 0 || num3 === 0) {
-    return "Error"
+    return "Error";
   } if (num1 < 0 || num2 < 0 || num3 < 0 ) {
-    return "Hay negativos"
+    return "Hay negativos";
   } if (num1 > 0 && num1 > num2 && num1 > num3) {
-    return "Número 1 es mayor y positivo"
+    return "Número 1 es mayor y positivo";
   } if (num3 > num1 && num3 > num2)
-    return (num3 + 1)
-  return false
+    return (num3 + 1);
+  return false;
 }
 
 function esPrimo(numero) {
@@ -170,10 +170,14 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
 
-  if ((numero%1 === 0) && (numero%numero === 0) && numero !== 1 && numero !== 0) {
+  if (numero === 1 || numero === 0) {
+    return false
+  } for (var i = 2; (numero%1 === 0) && (numero%numero === 0) && (numero >= i) && (numero%i !== 0); i++) {
+    
+    }
+  if (numero === i){
     return true
-  }
-  return "falso"
+  } return false
   }
 
 
@@ -182,6 +186,12 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
+  if (valor == true) {
+    return "Soy verdadero";
+  } {
+    return "Soy falso";
+  }
+
 }
 
 function tablaDelSeis(){
@@ -189,18 +199,39 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   
+  var a = [0];
+  var n = 6;
+  var i = 1;
+
+  while (n <= 60 && i <= 10) {
+    a.push(n*i);
+    i++;
+  }
+  return a;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
   
+  if (numero <= 999 && numero >= 100) {
+    return true
+  } {
+    return false
+  }
+
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  i = 0;
+  do {
+    numero = numero + 5;
+    i++;
+  } while ( i < 8 );
+ return numero
 }
 
 
