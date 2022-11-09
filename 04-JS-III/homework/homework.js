@@ -1,4 +1,6 @@
 // No cambies los nombres de las funciones.
+// @ts-check
+
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array (pasado por parametro)
@@ -62,11 +64,11 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
- for (n = -2; n < palabras.length; n++){
-  a = palabras[n] + ' ' + palabras[n+1];
- }
+  for (var n = -2; n < palabras.length; n++) {
+    var a = palabras[n] + ' ' + palabras[n + 1];
+  }
 
- return a;
+  return a;
 }
 
 
