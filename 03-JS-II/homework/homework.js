@@ -12,6 +12,7 @@ function obtenerMayor(x, y) {
     return Math.ceil(x)
   }
   
+  
 }
 
 function mayoriaDeEdad(edad) {
